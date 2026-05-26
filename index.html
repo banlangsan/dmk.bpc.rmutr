@@ -1,43 +1,317 @@
-💡
-การตลาดดิจิทัล
-บพิตรพิมุข จักรวรรดิ RMUTR
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="แอปช่วย creator ออนไลน์หารายได้">
+    <meta name="theme-color" content="#667eea">
+    <title>การตลาดดิจิทัล - บพิตรพิมุข จักรวรรดิ RMUTR</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%23667eea' width='192' height='192'/><text x='96' y='110' font-size='80' fill='white' text-anchor='middle' font-weight='bold'>💡</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%23667eea' width='192' height='192'/><text x='96' y='110' font-size='80' fill='white' text-anchor='middle' font-weight='bold'>💡</text></svg>">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">💡</div>
+                <div>
+                    <h1>การตลาดดิจิทัล</h1>
+                    <p>บพิตรพิมุข จักรวรรดิ RMUTR</p>
+                </div>
+            </div>
+            <button id="installBtn" class="install-btn" style="display:none;">
+                ติดตั้งแอป
+            </button>
+        </header>
 
-หน้าหลัก วิธีหารายได้ เครื่องมือ ความคืบหน้า
-ยินดีต้อนรับ!
-สร้างรายได้ระหว่างเรียนกับแอปนี้
+        <!-- Navigation Tabs -->
+        <nav class="nav-tabs">
+            <button class="nav-tab active" data-tab="home">หน้าหลัก</button>
+            <button class="nav-tab" data-tab="methods">วิธีหารายได้</button>
+            <button class="nav-tab" data-tab="tools">เครื่องมือ</button>
+            <button class="nav-tab" data-tab="progress">ความคืบหน้า</button>
+        </nav>
 
-วิธีหารายได้
-15+
-บทเรียนฟรี
-50+
-เครื่องมือ
-10+
-เริ่มต้นวันนี้
-📸
-ถ่ายภาพ & ขายของ
-เริ่ม 5 นาที ได้เงินเร็ว
-ยอดนิยม
-🎬
-ทำคลิป TikTok/Reels
-ได้เงินจากโฆษณา
-รายได้ดี
-✍️
-เขียน Blog
-Passive income ยาวนาน
-🛍️
-ทำร้านค้า
-ขายของของตัวเอง
-วิธีหารายได้ 15 แบบ
-เครื่องมือช่วยสร้าง
-ติดตามความคืบหน้า
-วิธีที่ลอง:
-0
- วิธี
-รายได้ต่อเดือน:
-0
- บาท
-เวลาที่ใช้:
-0
- ชม/สัปดาห์
-บันทึกความคืบหน้า
-📤 แชร์แอป
+        <!-- Tab Content -->
+        <main class="tab-content">
+            <!-- Home Tab -->
+            <div id="home" class="tab-pane active">
+                <section class="hero">
+                    <h2>ยินดีต้อนรับ!</h2>
+                    <p>สร้างรายได้ระหว่างเรียนกับแอปนี้</p>
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <div class="stat-label">วิธีหารายได้</div>
+                            <div class="stat-number">15+</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-label">บทเรียนฟรี</div>
+                            <div class="stat-number">50+</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-label">เครื่องมือ</div>
+                            <div class="stat-number">10+</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="quick-start">
+                    <h3>เริ่มต้นวันนี้</h3>
+                    <div class="card-grid">
+                        <div class="card" onclick="navigateTo('methods')">
+                            <div class="card-icon">📸</div>
+                            <div class="card-title">ถ่ายภาพ & ขายของ</div>
+                            <div class="card-desc">เริ่ม 5 นาที ได้เงินเร็ว</div>
+                            <span class="card-badge">ยอดนิยม</span>
+                        </div>
+                        <div class="card" onclick="navigateTo('methods')">
+                            <div class="card-icon">🎬</div>
+                            <div class="card-title">ทำคลิป TikTok/Reels</div>
+                            <div class="card-desc">ได้เงินจากโฆษณา</div>
+                            <span class="card-badge">รายได้ดี</span>
+                        </div>
+                        <div class="card" onclick="navigateTo('methods')">
+                            <div class="card-icon">✍️</div>
+                            <div class="card-title">เขียน Blog</div>
+                            <div class="card-desc">Passive income ยาวนาน</div>
+                        </div>
+                        <div class="card" onclick="navigateTo('methods')">
+                            <div class="card-icon">🛍️</div>
+                            <div class="card-title">ทำร้านค้า</div>
+                            <div class="card-desc">ขายของของตัวเอง</div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Methods Tab -->
+            <div id="methods" class="tab-pane">
+                <h2>วิธีหารายได้ 15 แบบ</h2>
+                <div id="methodsList" class="methods-list">
+                    <!-- เติมจาก JavaScript -->
+                </div>
+            </div>
+
+            <!-- Tools Tab -->
+            <div id="tools" class="tab-pane">
+                <h2>เครื่องมือช่วยสร้าง</h2>
+                <div id="toolsList" class="tools-list">
+                    <!-- เติมจาก JavaScript -->
+                </div>
+            </div>
+
+            <!-- Progress Tab -->
+            <div id="progress" class="tab-pane">
+                <h2>ติดตามความคืบหน้า</h2>
+                <div class="progress-section">
+                    <div class="progress-card">
+                        <label>วิธีที่ลอง:</label>
+                        <div class="progress-input">
+                            <input type="number" id="methodsTried" placeholder="จำนวนวิธี" min="0">
+                            <span class="unit">วิธี</span>
+                        </div>
+                    </div>
+                    <div class="progress-card">
+                        <label>รายได้ต่อเดือน:</label>
+                        <div class="progress-input">
+                            <input type="number" id="monthlyIncome" placeholder="0" min="0">
+                            <span class="unit">บาท</span>
+                        </div>
+                    </div>
+                    <div class="progress-card">
+                        <label>เวลาที่ใช้:</label>
+                        <div class="progress-input">
+                            <input type="number" id="hoursPerWeek" placeholder="0" min="0">
+                            <span class="unit">ชม/สัปดาห์</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-save" onclick="saveProgress()">บันทึกความคืบหน้า</button>
+                <div id="progressResult" class="progress-result" style="display:none;">
+                    <!-- ผลลัพธ์จะขึ้นที่นี่ -->
+                </div>
+            </div>
+        </main>
+
+        <!-- Bottom Action -->
+        <footer class="footer">
+            <button class="btn-primary" onclick="shareApp()">📤 แชร์แอป</button>
+        </footer>
+    </div>
+
+    <script>
+        // Data
+        const methods = [
+            { icon: '📸', name: 'Shutterstock', desc: 'ขายภาพถ่าย', difficulty: 1, income: 3, time: '30 นาที' },
+            { icon: '🎬', name: 'TikTok Creator Fund', desc: 'ได้เงินจากวิว', difficulty: 2, income: 4, time: '1 ชั่วโมง' },
+            { icon: '📝', name: 'Medium Partnership', desc: 'ขายบทความ', difficulty: 2, income: 2, time: '2 ชั่วโมง' },
+            { icon: '💰', name: 'Google Adsense', desc: 'โฆษณาในบล็อก', difficulty: 2, income: 2, time: '3 ชั่วโมง' },
+            { icon: '🛒', name: 'Shopee/TikTok Shop', desc: 'ขายของ', difficulty: 2, income: 4, time: '2 ชั่วโมง' },
+            { icon: '🎓', name: 'Udemy Instructor', desc: 'สอนคอร์สออนไลน์', difficulty: 3, income: 4, time: '5 ชั่วโมง' },
+            { icon: '🎨', name: 'Fiverr Freelancer', desc: 'งานออนไลน์ต่างๆ', difficulty: 2, income: 3, time: '2 ชั่วโมง' },
+            { icon: '🎵', name: 'Spotify Artist', desc: 'โพสต์เพลง', difficulty: 2, income: 1, time: '1 ชั่วโมง' },
+            { icon: '👥', name: 'Patreon', desc: 'แฟนบอกสนับสนุน', difficulty: 3, income: 4, time: '4 ชั่วโมง' },
+            { icon: '📱', name: 'Instagram Influencer', desc: 'โฆษณากับแบรนด์', difficulty: 2, income: 4, time: '3 ชั่วโมง' },
+            { icon: '💻', name: 'GitHub Sponsor', desc: 'บริจาคจากผู้ใช้', difficulty: 3, income: 2, time: '3 ชั่วโมง' },
+            { icon: '🖼️', name: 'NFT Art', desc: 'ขายศิลปะดิจิทัล', difficulty: 3, income: 3, time: '4 ชั่วโมง' },
+            { icon: '📚', name: 'Amazon KDP', desc: 'เผยแพร่หนังสือ', difficulty: 2, income: 3, time: '3 ชั่วโมง' },
+            { icon: '🎮', name: 'Twitch Streamer', desc: 'สตรีมเกมส์', difficulty: 2, income: 4, time: '5 ชั่วโมง' },
+            { icon: '💬', name: 'Twitter/X Tips', desc: 'รับทิปจากผู้ติดตาม', difficulty: 1, income: 2, time: '1 ชั่วโมง' }
+        ];
+
+        const tools = [
+            { icon: '🖼️', name: 'Canva', url: 'https://canva.com', desc: 'ออกแบบกราฟิก' },
+            { icon: '✂️', name: 'DaVinci Resolve', url: 'https://www.blackmagicdesign.com/products/davinciresolve/', desc: 'ตัดต่อวิดีโอ' },
+            { icon: '📸', name: 'Unsplash', url: 'https://unsplash.com', desc: 'รูปภาพฟรี' },
+            { icon: '🎵', name: 'Pixabay Music', url: 'https://pixabay.com/music/', desc: 'เพลงฟรี' },
+            { icon: '✍️', name: 'Grammarly', url: 'https://www.grammarly.com', desc: 'แก้ไขการเขียน' },
+            { icon: '📊', name: 'Google Analytics', url: 'https://analytics.google.com', desc: 'วิเคราะห์ข้อมูล' },
+            { icon: '🎯', name: 'Hootsuite', url: 'https://hootsuite.com', desc: 'จัดการ Social Media' },
+            { icon: '💼', name: 'Notion', url: 'https://notion.so', desc: 'องค์กรงาน' },
+            { icon: '🔍', name: 'SEMrush', url: 'https://semrush.com', desc: 'SEO Tools' },
+            { icon: '📧', name: 'Mailchimp', url: 'https://mailchimp.com', desc: 'Email Marketing' }
+        ];
+
+        // Navigation
+        document.querySelectorAll('.nav-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                const tabName = tab.getAttribute('data-tab');
+                navigateTo(tabName);
+            });
+        });
+
+        function navigateTo(tabName) {
+            // ซ่อนทั้งหมด
+            document.querySelectorAll('.tab-pane').forEach(pane => {
+                pane.classList.remove('active');
+            });
+            document.querySelectorAll('.nav-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+
+            // แสดงแท็บที่เลือก
+            document.getElementById(tabName).classList.add('active');
+            document.querySelector(`[data-tab="${tabName}"]`).classList.add('active');
+
+            // โหลดข้อมูลหากจำเป็น
+            if (tabName === 'methods' && !document.getElementById('methodsList').innerHTML) {
+                renderMethods();
+            }
+            if (tabName === 'tools' && !document.getElementById('toolsList').innerHTML) {
+                renderTools();
+            }
+        }
+
+        function renderMethods() {
+            const list = document.getElementById('methodsList');
+            list.innerHTML = methods.map((method, i) => `
+                <div class="method-card">
+                    <div class="method-header">
+                        <div class="method-icon">${method.icon}</div>
+                        <div class="method-info">
+                            <div class="method-name">${method.name}</div>
+                            <div class="method-desc">${method.desc}</div>
+                        </div>
+                    </div>
+                    <div class="method-stats">
+                        <span class="difficulty">ยาก: ${'⭐'.repeat(method.difficulty)}</span>
+                        <span class="income">รายได้: ${'💰'.repeat(method.income)}</span>
+                        <span class="time">⏱️ ${method.time}</span>
+                    </div>
+                    <button class="btn-learn" onclick="alert('ต้องเรียนรู้เพิ่มเติมเกี่ยวกับ ${method.name}')">เรียนรู้</button>
+                </div>
+            `).join('');
+        }
+
+        function renderTools() {
+            const list = document.getElementById('toolsList');
+            list.innerHTML = tools.map(tool => `
+                <div class="tool-card">
+                    <div class="tool-icon">${tool.icon}</div>
+                    <div class="tool-name">${tool.name}</div>
+                    <div class="tool-desc">${tool.desc}</div>
+                    <a href="${tool.url}" target="_blank" class="btn-open">เปิดเว็บไซต์ →</a>
+                </div>
+            `).join('');
+        }
+
+        function saveProgress() {
+            const methods = parseInt(document.getElementById('methodsTried').value) || 0;
+            const income = parseInt(document.getElementById('monthlyIncome').value) || 0;
+            const hours = parseInt(document.getElementById('hoursPerWeek').value) || 0;
+
+            // บันทึกข้อมูล
+            localStorage.setItem('methodsTried', methods);
+            localStorage.setItem('monthlyIncome', income);
+            localStorage.setItem('hoursPerWeek', hours);
+
+            // แสดงผลลัพธ์
+            const result = document.getElementById('progressResult');
+            const hourlyRate = hours > 0 ? (income / hours / 4).toFixed(2) : 0;
+            result.innerHTML = `
+                <div class="result-content">
+                    <h3>📊 สถิติของคุณ</h3>
+                    <p>✅ ทดลองวิธี: <strong>${methods} วิธี</strong></p>
+                    <p>💵 รายได้เฉลี่ย: <strong>${income.toLocaleString()} บาท/เดือน</strong></p>
+                    <p>⏱️ เวลา: <strong>${hours} ชั่วโมง/สัปดาห์</strong></p>
+                    <p>💪 อัตราค่าจ้าง: <strong>${hourlyRate} บาท/ชม</strong></p>
+                </div>
+            `;
+            result.style.display = 'block';
+        }
+
+        function shareApp() {
+            const text = 'ดาวน์โหลดแอป "การตลาดดิจิทัล - บพิตรพิมุข จักรวรรดิ RMUTR" และสร้างรายได้ระหว่างเรียน!';
+            
+            if (navigator.share) {
+                navigator.share({
+                    title: 'การตลาดดิจิทัล',
+                    text: text,
+                    url: window.location.href
+                });
+            } else {
+                alert(text);
+            }
+        }
+
+        // Install PWA
+        let deferredPrompt;
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            document.getElementById('installBtn').style.display = 'block';
+        });
+
+        document.getElementById('installBtn').addEventListener('click', async () => {
+            if (deferredPrompt) {
+                deferredPrompt.prompt();
+                const { outcome } = await deferredPrompt.userChoice;
+                console.log(`User response to the install prompt: ${outcome}`);
+                deferredPrompt = null;
+            }
+        });
+
+        // Register Service Worker
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js').catch(err => {
+                console.log('Service Worker registration failed:', err);
+            });
+        }
+
+        // โหลดข้อมูลที่บันทึกไว้
+        window.addEventListener('load', () => {
+            const saved = {
+                methods: localStorage.getItem('methodsTried') || '0',
+                income: localStorage.getItem('monthlyIncome') || '0',
+                hours: localStorage.getItem('hoursPerWeek') || '0'
+            };
+            document.getElementById('methodsTried').value = saved.methods;
+            document.getElementById('monthlyIncome').value = saved.income;
+            document.getElementById('hoursPerWeek').value = saved.hours;
+        });
+    </script>
+</body>
+</html>
